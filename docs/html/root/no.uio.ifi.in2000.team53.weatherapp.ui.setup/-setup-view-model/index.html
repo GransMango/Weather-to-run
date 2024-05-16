@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>SetupViewModel</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            root
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="moduleName/main">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="root::no.uio.ifi.in2000.team53.weatherapp.ui.setup/SetupViewModel///PointingToDeclaration//1247924383">
+  <div class="breadcrumbs"><a href="../../../index.html">root</a><span class="delimiter">/</span><a href="../index.html">no.uio.ifi.in2000.team53.weatherapp.ui.setup</a><span class="delimiter">/</span><span class="current">SetupViewModel</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Setup</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">SetupViewModel</a> <span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">appContext<span class="token operator">: </span><span data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">userPreferencesManager<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.preferences/-user-preferences-manager/index.html">UserPreferencesManager</a><span class="token punctuation">, </span></span><span class="parameter ">activityDatabaseRepository<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.remote.activitydatabase/-activity-database-repository/index.html">ActivityDatabaseRepository</a><span class="token punctuation">, </span></span><span class="parameter ">userActivityRepository<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.useractivities/-user-activity-repository/index.html">UserActivityRepository</a><span class="token punctuation">, </span></span><span class="parameter ">userTimesRepository<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.useractivities/-user-times-repository/index.html">UserTimesRepository</a><span class="token punctuation">, </span></span><span class="parameter ">userRepository<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.userinfo/-user-repository/index.html">UserRepository</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">ViewModel for the Setup screen.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>app</span><wbr></wbr><span><span>Context</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The application context.</p></div></div></div></div><div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>user</span><wbr></wbr><span>Preferences</span><wbr></wbr><span><span>Manager</span></span></u></div></span></div><div><div class="title"><p class="paragraph"><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.preferences/-user-preferences-manager/index.html">UserPreferencesManager</a> for handling user preferences.</p></div></div></div></div><div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>activity</span><wbr></wbr><span>Database</span><wbr></wbr><span><span>Repository</span></span></u></div></span></div><div><div class="title"><p class="paragraph"><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.remote.activitydatabase/-activity-database-repository/index.html">ActivityDatabaseRepository</a> for handling activity data.</p></div></div></div></div><div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>user</span><wbr></wbr><span>Activity</span><wbr></wbr><span><span>Repository</span></span></u></div></span></div><div><div class="title"><p class="paragraph"><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.useractivities/-user-activity-repository/index.html">UserActivityRepository</a> for handling user activity data.</p></div></div></div></div><div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>user</span><wbr></wbr><span>Times</span><wbr></wbr><span><span>Repository</span></span></u></div></span></div><div><div class="title"><p class="paragraph"><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.useractivities/-user-times-repository/index.html">UserTimesRepository</a> for handling user times data.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-396276161%2FConstructors%2F1247924383" anchor-label="SetupViewModel" id="-396276161%2FConstructors%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-setup-view-model.html"><span>Setup</span><wbr></wbr><span>View</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-396276161%2FConstructors%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">appContext<span class="token operator">: </span><span data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">userPreferencesManager<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.preferences/-user-preferences-manager/index.html">UserPreferencesManager</a><span class="token punctuation">, </span></span><span class="parameter ">activityDatabaseRepository<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.remote.activitydatabase/-activity-database-repository/index.html">ActivityDatabaseRepository</a><span class="token punctuation">, </span></span><span class="parameter ">userActivityRepository<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.useractivities/-user-activity-repository/index.html">UserActivityRepository</a><span class="token punctuation">, </span></span><span class="parameter ">userTimesRepository<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.useractivities/-user-times-repository/index.html">UserTimesRepository</a><span class="token punctuation">, </span></span><span class="parameter ">userRepository<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.data.local.userinfo/-user-repository/index.html">UserRepository</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1494774915%2FProperties%2F1247924383" anchor-label="activities" id="-1494774915%2FProperties%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="activities.html"><span><span>activities</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1494774915%2FProperties%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="activities.html">activities</a><span class="token operator">: </span><span data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../no.uio.ifi.in2000.team53.weatherapp.model.remote.activitydatabase/-activity-information/index.html">ActivityInformation</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-859562408%2FProperties%2F1247924383" anchor-label="preferences" id="-859562408%2FProperties%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="preferences.html"><span><span>preferences</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-859562408%2FProperties%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="preferences.html">preferences</a><span class="token operator">: </span><span data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token operator">&lt;</span><a href="../../no.uio.ifi.in2000.team53.weatherapp.model.local.preferences/-user-preferences/index.html">UserPreferences</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-780786206%2FProperties%2F1247924383" anchor-label="selectedActivities" id="-780786206%2FProperties%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="selected-activities.html"><span>selected</span><wbr></wbr><span><span>Activities</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-780786206%2FProperties%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">val </span><a href="selected-activities.html">selectedActivities</a><span class="token operator">: </span><span data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="../../no.uio.ifi.in2000.team53.weatherapp.model.remote.activitydatabase/-activity-information/index.html">ActivityInformation</a><span class="token operator">&gt;</span><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-959282690%2FFunctions%2F1247924383" anchor-label="addSelection" id="-959282690%2FFunctions%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-selection.html"><span>add</span><wbr></wbr><span><span>Selection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-959282690%2FFunctions%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="add-selection.html"><span class="token function">addSelection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.model.remote.activitydatabase/-activity-information/index.html">ActivityInformation</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add an activity to the selected activities list.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1135328565%2FFunctions%2F1247924383" anchor-label="removeSelection" id="1135328565%2FFunctions%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-selection.html"><span>remove</span><wbr></wbr><span><span>Selection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1135328565%2FFunctions%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="remove-selection.html"><span class="token function">removeSelection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">activity<span class="token operator">: </span><a href="../../no.uio.ifi.in2000.team53.weatherapp.model.remote.activitydatabase/-activity-information/index.html">ActivityInformation</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Remove an activity from the selected activities list.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1098765969%2FFunctions%2F1247924383" anchor-label="scheduleNotification" id="1098765969%2FFunctions%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="schedule-notification.html"><span>schedule</span><wbr></wbr><span><span>Notification</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1098765969%2FFunctions%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="schedule-notification.html"><span class="token function">scheduleNotification</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">delayMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Schedule a notification after a delay.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1332078565%2FFunctions%2F1247924383" anchor-label="updateIsFirstLaunch" id="1332078565%2FFunctions%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-is-first-launch.html"><span>update</span><wbr></wbr><span>Is</span><wbr></wbr><span>First</span><wbr></wbr><span><span>Launch</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1332078565%2FFunctions%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="update-is-first-launch.html"><span class="token function">updateIsFirstLaunch</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">isFirstLaunch<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Update the user's first launch variable.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1064791173%2FFunctions%2F1247924383" anchor-label="updateLanguage" id="-1064791173%2FFunctions%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-language.html"><span>update</span><wbr></wbr><span><span>Language</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1064791173%2FFunctions%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="update-language.html"><span class="token function">updateLanguage</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">language<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Update the user's language preference.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1965944819%2FFunctions%2F1247924383" anchor-label="updatePollenNotification" id="1965944819%2FFunctions%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-pollen-notification.html"><span>update</span><wbr></wbr><span>Pollen</span><wbr></wbr><span><span>Notification</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1965944819%2FFunctions%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="update-pollen-notification.html"><span class="token function">updatePollenNotification</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">pollenNotification<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Update the user's pollen notification preference.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1413133594%2FFunctions%2F1247924383" anchor-label="updateUserSelection" id="-1413133594%2FFunctions%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-user-selection.html"><span>update</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Selection</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1413133594%2FFunctions%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="update-user-selection.html"><span class="token function">updateUserSelection</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">selectedActivityIDs<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Update the user's selected activities.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1239500149%2FFunctions%2F1247924383" anchor-label="updateUserTimes" id="-1239500149%2FFunctions%2F1247924383" data-filterable-set="moduleName/main"></a>
+          <div class="table-row" data-filterable-current="moduleName/main" data-filterable-set="moduleName/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-user-times.html"><span>update</span><wbr></wbr><span>User</span><wbr></wbr><span><span>Times</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1239500149%2FFunctions%2F1247924383"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="moduleName/main"><div class="symbol monospace"><span class="token keyword">fun </span><a href="update-user-times.html"><span class="token function">updateUserTimes</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">startTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">endTime<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Update the user's selected times.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
