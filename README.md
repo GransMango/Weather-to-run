@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/GransMango/Weather-to-run/assets/78266855/c278fb2a-375d-4471-922a-a850a2ae4908" alt="App Screenshot 1" width="200"/>
+  <img src="https://github.com/GransMango/Weather-to-run/assets/78266855/ad23a47a-76e4-4b0e-bc3f-44850f81f63d" alt="App Screenshot 2" width="200"/>
+</p>
 # Team 53
 We've decided to utilize KDoc as documentation for our application.
 Seeing as the documentation can generate html files, we decided to host a website showcasing the documentation: https://in2000-team53-documentation.azurewebsites.net/
